@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Image Upload</title>
+</head>
+<body>
+
+    <h1>Upload Image for OCR Prediction</h1>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="imageFile" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Prediction Result:</h2>
+    <div id="predictionResult">No prediction yet</div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const fileInput = document.getElementById('imageFile');
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            try {
+                const response = await fetch('http://127.0.0.1:8000/predict', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                document.getElementById('predictionResult').innerText = `Prediction: ${result.prediction}`;
+            } catch (error) {
+                console.error('Error during the fetch:', error);
+                document.getElementById('predictionResult').innerText = 'Error occurred during prediction.';
+            }
+        });
+    </script>
+
+</body>
+</html>
