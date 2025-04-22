@@ -1,1 +1,1 @@
-
+run server: uvicorn app:app --reload
