@@ -16,7 +16,7 @@ def main():
     detector = Predictor(config)
 
     # Load the image
-    img_path = './sample/img_21.png'
+    img_path = './sample/image.png'
     img = Image.open(img_path)
 
 
