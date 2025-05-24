@@ -1,3 +1,4 @@
+cat <<EOF > README.md
 # Vietnamese-OCR
 
 Vietnamese-OCR is an OCR system designed to recognize Vietnamese text from images. The system uses a three-stage pipeline combining image preprocessing, object detection, and sequence recognition for high accuracy on Vietnamese scripts.
@@ -32,4 +33,4 @@ This project builds upon and is inspired by excellent open-source works. We grat
 
 - **VietOCR** – For their Vietnamese OCR model and valuable insights.  
 - **YOLOv5** – For providing a state-of-the-art object detection framework.
-" > README.md
+EOF
