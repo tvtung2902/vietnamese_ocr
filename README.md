@@ -1,4 +1,4 @@
-echo "# Vietnamese-OCR
+# Vietnamese-OCR
 
 Vietnamese-OCR is an OCR system designed to recognize Vietnamese text from images. The system uses a three-stage pipeline combining image preprocessing, object detection, and sequence recognition for high accuracy on Vietnamese scripts.
 
