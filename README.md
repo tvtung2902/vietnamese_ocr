@@ -19,6 +19,6 @@ Vietnamese-OCR is an OCR system designed to recognize Vietnamese text from image
 To set up the project, clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/vietnamese-ocr.git
+git clone https://github.com/tvtung2902/vietnamese-ocr.git
 cd vietnamese-ocr
 pip install -r requirements.txt
