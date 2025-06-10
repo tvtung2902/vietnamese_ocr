@@ -19,7 +19,6 @@ def main():
     img_path = './sample/image.png'
     img = Image.open(img_path)
 
-
     # Perform OCR prediction
     result = detector.predict(img)
     print("Kết quả OCR:", result)

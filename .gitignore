@@ -1,2 +1,5 @@
 weight/
 *.pth
+yolo-v52/
+yolo-v5/
+yolo-v51/
