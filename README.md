@@ -24,5 +24,5 @@ The pipeline consists of two main stages:
 ---
 
 ### References
-- [VietOCR - quanpn90/VietOCR](https://github.com/pbcquoc/vietocr)
+- [VietOCR - pbcquoc/VietOCR](https://github.com/pbcquoc/vietocr)
 - [YOLOv5 - Ultralytics](https://github.com/ultralytics/yolov5)
