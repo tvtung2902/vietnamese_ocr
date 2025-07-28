@@ -28,16 +28,43 @@ The pipeline consists of two main stages:
 </p>
 
 2. **Text Recognition** (VietOCR):
-   - We use **VietOCR**, a deep learning-based text recognizer optimized for Vietnamese.
-   - VietOCR architecture consists of two main components:
-     - **VGG-style CNN** for **feature extraction**: Converts input images into visual feature sequences.
-     - **Transformer encoder-decoder**: Translates the visual features into Vietnamese character sequences.
-   - Unlike traditional OCRs using CTC, VietOCR uses **Seq2Seq with attention**, making it highly accurate for Vietnamese with diacritics and complex scripts.
 
-| Backbone               | Config           | Precision full sequence |
-|------------------------|------------------|--------------------------|
-| VGG19-bn - Transformer | vgg_transformer  | 0.8800                   |
-| VGG19-bn - Seq2Seq     | vgg_seq2seq      | 0.8701                   |
+- We use **VietOCR**, a deep learning-based text recognizer optimized for Vietnamese.
+- VietOCR architecture consists of two main components:
+  - **VGG-style CNN** for **feature extraction**: Converts input images into visual feature sequences.
+  - **Transformer encoder-decoder**: Translates the visual features into Vietnamese character sequences.
+- Unlike traditional OCRs using CTC, VietOCR uses **Seq2Seq with attention**, making it highly accurate for Vietnamese with diacritics and complex scripts.
+
+<p align="center">
+  <b> Model Evaluation Results</b>
+</p>
+
+<p align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Backbone</th>
+      <th>Config</th>
+      <th>Precision full sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VGG19-bn - Transformer</td>
+      <td>vgg_transformer</td>
+      <td>0.8800</td>
+    </tr>
+    <tr>
+      <td>VGG19-bn - Seq2Seq</td>
+      <td>vgg_seq2seq</td>
+      <td>0.8701</td>
+    </tr>
+  </tbody>
+</table>
+
+</p>
+
 
 ---
 
