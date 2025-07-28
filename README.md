@@ -24,7 +24,7 @@ The pipeline consists of two main stages:
 
 <p align="center">
   <img src="demo/results-yolo.png" width="100%"><br>
-  <em>Figure: Detection training and validation</em>
+  <em>Figure: Detection results</em>
 </p>
 
 2. **Text Recognition** (VietOCR):
@@ -35,11 +35,10 @@ The pipeline consists of two main stages:
   - **Transformer encoder-decoder**: Translates the visual features into Vietnamese character sequences.
 - Unlike traditional OCRs using CTC, VietOCR uses **Seq2Seq with attention**, making it highly accurate for Vietnamese with diacritics and complex scripts.
 
-| Backbone                          | Config                 | Precision (Full Sequence)       |
-|----------------------------------|------------------------|----------------------------------|
-| VGG19-bn - Transformer           | vgg_transformer        | 0.8800                           |
-| VGG19-bn - Seq2Seq               | vgg_seq2seq            | 0.8701                           |
-
+<p align="center">
+  <img src="demo/results-vietocr.png" width="100%"><br>
+  <em>Figure: VietOCR results</em>
+</p>
 
 ---
 
@@ -56,5 +55,7 @@ This project is open-source and available under the MIT License.
 ### References
 - [VietOCR - pbcquoc/VietOCR](https://github.com/pbcquoc/vietocr)
 - [YOLOv5 - Ultralytics](https://github.com/ultralytics/yolov5)
+
+---
 
 Thank you for checking out this project! If you find it useful, feel free to ⭐️ star the repository and share it with others.
