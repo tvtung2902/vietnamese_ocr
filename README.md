@@ -41,7 +41,7 @@ The pipeline consists of two main stages:
 
 <p align="center">
 
-<table style="width:100%; text-align:left;">
+<table width="100%>
   <thead>
     <tr>
       <th>Backbone</th>
