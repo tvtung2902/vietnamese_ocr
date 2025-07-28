@@ -11,6 +11,7 @@ This project is a complete Vietnamese OCR pipeline that **combines object detect
 <p align="center">
    <img src="demo/image1.png" width="90%">
 </p>
+
 ---
 
 ## Overview of the System
