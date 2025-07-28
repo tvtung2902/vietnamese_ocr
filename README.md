@@ -35,27 +35,11 @@ The pipeline consists of two main stages:
   - **Transformer encoder-decoder**: Translates the visual features into Vietnamese character sequences.
 - Unlike traditional OCRs using CTC, VietOCR uses **Seq2Seq with attention**, making it highly accurate for Vietnamese with diacritics and complex scripts.
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th>Backbone</th>
-      <th>Config</th>
-      <th>Precision full sequence</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>VGG19-bn - Transformer</td>
-      <td>vgg_transformer</td>
-      <td>0.8800</td>
-    </tr>
-    <tr>
-      <td>VGG19-bn - Seq2Seq</td>
-      <td>vgg_seq2seq</td>
-      <td>0.8701</td>
-    </tr>
-  </tbody>
-</table>
+| Backbone                          | Config                 | Precision (Full Sequence)       |
+|----------------------------------|------------------------|----------------------------------|
+| VGG19-bn - Transformer           | vgg_transformer        | 0.8800                           |
+| VGG19-bn - Seq2Seq               | vgg_seq2seq            | 0.8701                           |
+
 
 ---
 
