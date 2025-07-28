@@ -57,9 +57,6 @@ The pipeline consists of two main stages:
   </tbody>
 </table>
 
-</p>
-
-
 ---
 
 ## Contributing
