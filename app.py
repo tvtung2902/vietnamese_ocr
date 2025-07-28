@@ -30,7 +30,6 @@ class ModelLoader:
     def initialize_models(self):
         start_time = time.time()
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        print(f"\n🔧 Đang khởi tạo mô hình trên {self.device.upper()}...")
 
         try:
             self.yolo_model = torch.hub.load(
@@ -48,7 +47,6 @@ class ModelLoader:
         try:
             config = Cfg.load_config_from_file('./config/vgg-transformer.yml')
             config['device'] = self.device
-            print(config)
             self.detector = Predictor(config)
         except Exception as e:
             raise
@@ -80,7 +78,6 @@ def handle_errors(f):
 
 @app.route('/health', methods=['GET'])
 def health_check():
-    """Kiểm tra trạng thái server và mô hình"""
     status = {
         "status": "running",
         "models_loaded": bool(model_loader.yolo_model and model_loader.detector),

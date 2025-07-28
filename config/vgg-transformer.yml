@@ -2,7 +2,7 @@
 pretrain: none
 
 # url or local path (predict)
-weights: weight/transformerocr_1.pth
+weights: weight/transformerocr.pth
 
 backbone: vgg19_bn
 cnn:
