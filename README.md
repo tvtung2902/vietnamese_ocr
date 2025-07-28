@@ -8,8 +8,9 @@ This project is a complete Vietnamese OCR pipeline that **combines object detect
 
 **You can watch the video demo [here](https://www.youtube.com/watch?v=-sWo-P3ch0E)**
 
-<img src="demo/image1.png" width="90%">
-
+<p align="center">
+   <img src="demo/image1.png" width="90%">
+</p>
 ---
 
 ## Overview of the System
