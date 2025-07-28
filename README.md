@@ -8,7 +8,7 @@ This project is a complete Vietnamese OCR pipeline that **combines object detect
 
 **You can watch the video demo [here](https://www.youtube.com/watch?v=-sWo-P3ch0E)**
 
-<img src="demo/image1.png" width="100%">
+<img src="demo/image1.png" width="90%">
 
 ---
 
@@ -23,7 +23,7 @@ The pipeline consists of two main stages:
    - These cropped regions are then passed to the next stage for recognition.
 
 <p align="center">
-  <img src="demo/results-yolo.png" width="100%"><br>
+  <img src="demo/results-yolo.png" width="90%"><br>
   <em>Figure: Detection results</em>
 </p>
 
@@ -36,7 +36,7 @@ The pipeline consists of two main stages:
 - Unlike traditional OCRs using CTC, VietOCR uses **Seq2Seq with attention**, making it highly accurate for Vietnamese with diacritics and complex scripts.
 
 <p align="center">
-  <img src="demo/results-vietocr.png" width="100%"><br>
+  <img src="demo/results-vietocr.png" width="90%"><br>
   <em>Figure: VietOCR results</em>
 </p>
 
