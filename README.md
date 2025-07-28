@@ -35,12 +35,6 @@ The pipeline consists of two main stages:
   - **Transformer encoder-decoder**: Translates the visual features into Vietnamese character sequences.
 - Unlike traditional OCRs using CTC, VietOCR uses **Seq2Seq with attention**, making it highly accurate for Vietnamese with diacritics and complex scripts.
 
-<p align="center">
-  <b> Model Evaluation Results</b>
-</p>
-
-<p align="center">
-
 <table width="100%>
   <thead>
     <tr>
