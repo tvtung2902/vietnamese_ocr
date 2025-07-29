@@ -6,7 +6,7 @@ This project is a complete Vietnamese OCR pipeline that **combines object detect
 
 ## Demo
 
-**You can watch the video demo [here](https://www.youtube.com/watch?v=-sWo-P3ch0E)**
+**You can watch the video demo [here](https://drive.google.com/file/d/15K5SZwCAK2J-AcIDi9a6HydfqngA5AId/view?usp=drive_link)**
 
 <p align="center">
    <img src="demo/image.png" width="90%">
